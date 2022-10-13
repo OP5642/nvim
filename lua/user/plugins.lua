@@ -45,7 +45,8 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-nvim-lua"
 
 -- snippets
-    use "L3MON4D3/LuaSnip"
+    use "dcampos/nvim-snippy"
+	use "dcampos/cmp-snippy"
 
 -- LSP
     use "neovim/nvim-lspconfig"

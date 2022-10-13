@@ -1,0 +1,33 @@
+# Comments are possible
+#snippet fun
+#	function ${1:name}(${2:params})
+#		${0:$VISUAL}
+#	end
+# Beginning of an environment
+snippet bg
+	\begin{$1}
+		${0:$VISUAL}
+	\end{$1}}
+# Line math
+snippet lm
+	\( ${1:$VISUAL} \) $0
+# Centered math
+snippet cm
+	\[ ${1:$VISUAL} .\] $0
+# Serbian quotation marks, with my latex definition of them
+snippet nvd
+	\zn ${1:$VISUAL} \zng $0
+# Fraction
+snippet fr
+	\frac{$1}{$2}$0
+#snippet upcase
+#	local ${1:var} = '${1/.*/\U\0/g}'
+#snippet choices
+#	print('My favorite language is: ${1|JavaScript,Lua,Rust|}')
+#snippet date
+#	Current date is `strftime('%c')`
+# Custom tabstop order
+#snippet repeat
+#	repeat
+#		${2:what}
+#	while ${1:condition}

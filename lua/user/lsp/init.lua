@@ -7,3 +7,15 @@ require "user.lsp.lsp-installer"
 require("user.lsp.handlers").setup()
 
 require "user.lsp.ccls"
+
+require('snippy').setup({
+    mappings = {
+        is = {
+            ['<Tab>'] = 'expand_or_advance',
+            ['<S-Tab>'] = 'previous',
+        },
+        nx = {
+            ['<leader>x'] = 'cut_text',
+        },
+    },
+})
