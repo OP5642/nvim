@@ -3,11 +3,6 @@ if not status_ok then
     return
 end
 
-require "user.lsp.lsp-installer"
-require("user.lsp.handlers").setup()
-
-require "user.lsp.ccls"
-
 require('snippy').setup({
     mappings = {
         is = {
@@ -19,3 +14,8 @@ require('snippy').setup({
         },
     },
 })
+
+require "user.lsp.lsp-installer"
+require("user.lsp.handlers").setup()
+
+require "user.lsp.ccls"
