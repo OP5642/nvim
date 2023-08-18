@@ -60,7 +60,13 @@ return packer.startup(function(use)
 -- Other
     use "windwp/nvim-autopairs"
     use "kyazdani42/nvim-web-devicons"
-    use "kyazdani42/nvim-tree.lua"
+    use {
+        "kyazdani42/nvim-tree.lua",
+        cmd = 'NvimTreeToggle',
+        config = function()
+            require("nvim-tree").setup{}
+        end
+    }
     use "akinsho/bufferline.nvim"
 
     -- Automatically set up your configuration after cloning packer.nvim
