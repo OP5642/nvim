@@ -31,6 +31,7 @@ keymap("n", "<S-Tab>", ":bprevious<CR>", opts)
 
 --Compile Latex
 keymap("n", "<C-s>", ":!pdflatex %<CR>", opts)
+keymap("n", "<C-b>", ":execute '!biber ' . expand('%:r')<CR>", opts)
 
 --Latex bindings
 keymap("n", ";c", "i<Tab>\\begin{center}<Enter><Enter>\\end{center}<Esc>ki<Tab><Tab>", opts)
